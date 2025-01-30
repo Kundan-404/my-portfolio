@@ -78,3 +78,19 @@ body {
     @apply bg-white dark:bg-secondary;
   }
 } 
+
+.container {
+  @apply max-w-4xl mx-auto px-4;
+}
+
+html {
+  overflow-x: hidden;
+}
+
+body {
+  @apply overflow-x-hidden;
+}
+
+/* * {
+  outline: 1px solid red !important;
+} */

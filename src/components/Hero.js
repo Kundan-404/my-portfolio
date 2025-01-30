@@ -1,7 +1,7 @@
 export default function Hero() {
     return (
       <section className="min-h-screen flex items-center pt-20 relative overflow-hidden">
-        <div className="absolute inset-0 -z-10 opacity-10">
+        <div className="absolute inset-0 -z-10 opacity-10 r">
     <div className="absolute inset-0 bg-[linear-gradient(to_right,#F34F3255_1px,transparent_1px),linear-gradient(to_bottom,#F34F3255_1px,transparent_1px)] bg-[size:40px_40px] dark:bg-[linear-gradient(to_right,#DB9F7555_1px,transparent_1px),linear-gradient(to_bottom,#DB9F7555_1px,transparent_1px)]"></div>
   </div>
         <div className="max-w-4xl mx-auto px-4">

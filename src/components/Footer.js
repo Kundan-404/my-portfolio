@@ -5,7 +5,7 @@ import { EnvelopeIcon, PhoneIcon, GlobeAltIcon } from '@heroicons/react/24/outli
 export default function Footer() {
   return (
     <footer className="border-t border-primary/20 bg-primary text-white">
-      <div className="max-w-4xl mx-auto px-4 py-6">
+      <div className="max-w-4xl border-solid solid; mx-auto px-4 py-4 container ">
         <div className="grid grid-cols-1 md:grid-cols-3 gap-8 mb-8">
           {/* About Column */}
           <div>

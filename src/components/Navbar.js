@@ -33,7 +33,7 @@ export default function Navbar() {
 
     return (
         <nav className={`fixed backdrop-blur-sm w-full z-10 transition-transform duration-300 ${visible ? 'transform translate-y-0' : 'transform -translate-y-full'}`}>
-        <div className="max-w-4xl border-solid solid; mx-auto px-4 py-4">
+        <div className="max-w-4xl border-solid solid; mx-auto px-4 py-4 ">
           <div className="flex justify-between items-center">
             <h1 className="text-2xl font-bold"> <a href="">Natesh Kumar</a></h1>
             <div className="space-x-6 text-lg font-semibold">

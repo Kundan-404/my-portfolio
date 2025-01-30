@@ -30,8 +30,10 @@ export default function About() {
             <img 
               src="/assets/profile.png" // Add your profile image to /public/assets
               alt="Natesh Kumar"
-              className="rounded-full shadow-lg w-64 h-64 object-cover"
+              className="rounded-full shadow-lg w-64 h-64 object-cover border-4 border-primary"
             />
+
+            
           </div>
         </div>
       </div>
