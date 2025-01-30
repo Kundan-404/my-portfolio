@@ -3,6 +3,9 @@ import { experiences } from "../data/experience";
 export default function Experience() {
   return (
     <section id="experience" className="py-20 bg-gray-50">
+      <div className="relative pl-8 border-l-2 border-neutral dark:border-accent">
+  {/* <div className="absolute w-4 h-4 bg-primary dark:bg-accent rounded-full -left-[9px] top-0"></div> */}
+</div>
       <div className="max-w-4xl mx-auto px-4">
         <h2 className="text-3xl font-bold mb-12">Where I’ve Worked</h2>
         

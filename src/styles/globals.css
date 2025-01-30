@@ -64,3 +64,17 @@ body {
 .nav-link:hover::after {
   @apply w-full;
 }
+
+@layer base {
+  body {
+    @apply bg-neutral dark:bg-secondary text-white dark:text-white;
+  }
+
+  .nav-link::after {
+    @apply bg-primary dark:bg-accent;
+  }
+
+  .clip-path-divider {
+    @apply bg-white dark:bg-secondary;
+  }
+} 

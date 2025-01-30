@@ -2,8 +2,8 @@ export default function Hero() {
     return (
       <section className="min-h-screen flex items-center pt-20 relative overflow-hidden">
         <div className="absolute inset-0 -z-10 opacity-10">
-        <div className="absolute inset-0 bg-[linear-gradient(to_right,#F34F3255_1px,transparent_1px),linear-gradient(to_bottom,#F34F3255_1px,transparent_1px)] bg-[size:40px_40px]"></div>
-      </div>
+    <div className="absolute inset-0 bg-[linear-gradient(to_right,#F34F3255_1px,transparent_1px),linear-gradient(to_bottom,#F34F3255_1px,transparent_1px)] bg-[size:40px_40px] dark:bg-[linear-gradient(to_right,#DB9F7555_1px,transparent_1px),linear-gradient(to_bottom,#DB9F7555_1px,transparent_1px)]"></div>
+  </div>
         <div className="max-w-4xl mx-auto px-4">
           <p className="text-lg text-gray-600 mb-4">Hi, my name is</p>
           <h1 className="text-5xl font-bold mb-6">Natesh Kumar</h1>
@@ -16,7 +16,7 @@ export default function Hero() {
           <a 
             href="/assets/Natesh Kumar_resume.pdf" 
             download
-            className="bg-accent text-neutral hover:bg-tertiary px-8 py-3 rounded-md "
+            className="border-2 border-neutral font-semibold text-neutral hover:bg-neutral hover:text-white px-8 py-3 rounded-md "
           >
             Download Resume
           </a>
