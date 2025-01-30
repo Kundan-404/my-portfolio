@@ -8,8 +8,13 @@ export default {
   theme: {
     extend: {
       colors: {
-        primary: "#2A2A2A", // Dark gray from your template
-        secondary: "#4F46E5", // Blue accent
+        // primary: "#2A2A2A", // Dark gray from your template
+        // secondary: "#4F46E5", // Blue accent
+        primary: "#121324", // Vibrant orange-red
+        secondary: "#545748", // Muted olive green
+        accent: "#DB9F75",   // Warm beige
+        neutral: "#804012",  // Deep brown
+        tertiary: "#BE4B1B", // Burnt orange
       },
     },
   },

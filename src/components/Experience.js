@@ -8,8 +8,8 @@ export default function Experience() {
         
         <div className="space-y-12">
           {experiences.map((exp, idx) => (
-            <div key={idx} className="relative pl-8 border-l-2 border-secondary">
-              <div className="absolute w-4 h-4 bg-secondary rounded-full -left-[9px] top-0"></div>
+            <div key={idx} className="relative pl-8 border-l-2 border-neutral">
+              <div className="absolute w-4 h-4 bg-primary rounded-full -left-[9px] top-0"></div>
               <h3 className="text-xl font-semibold">{exp.company}</h3>
               <p className="text-gray-600 mb-2">{exp.role} • {exp.duration}</p>
               <ul className="list-disc space-y-2 pl-6">
