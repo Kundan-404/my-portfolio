@@ -4,7 +4,7 @@
 @tailwind components;
 @tailwind utilities;
 
-/* Custom scrollbar */
+/* Custom scrollbar
 ::-webkit-scrollbar {
   width: 8px;
 }
@@ -16,4 +16,81 @@
 ::-webkit-scrollbar-thumb {
   background: #4f47e4;
   border-radius: 4px;
+} */
+
+body {
+  @apply text-neutral; 
 }
+
+.section-title {
+  @apply text-primary; 
+}
+
+::-webkit-scrollbar-thumb {
+  background: #F34F32; 
+}
+
+body {
+  background-color: #FFFFFF; /* White background */
+  background-image: radial-gradient(#F34F32 0.7px, transparent 0.7px);
+  background-size: 20px 20px;
+}
+
+/* body {
+  background-color: #122324;
+  background-image: radial-gradient(#DB9F75 0.5px, transparent 0.5px);
+  background-size: 20px 20px;
+} */
+
+
+/* Wave shape */
+.clip-path-divider {
+  clip-path: polygon(0 0, 100% 0, 100% 60%, 0% 100%);
+}
+
+/* For flipped dividers */
+.flip-divider {
+  clip-path: polygon(0 40%, 100% 0, 100% 100%, 0% 100%);
+}
+
+.nav-link {
+  @apply relative;
+}
+
+.nav-link::after {
+  @apply content-[''] absolute bottom-0 left-0 w-0 h-0.5 bg-white transition-all duration-300;
+}
+
+.nav-link:hover::after {
+  @apply w-full;
+}
+
+@layer base {
+  body {
+    @apply bg-neutral dark:bg-secondary text-white dark:text-white;
+  }
+
+  .nav-link::after {
+    @apply bg-primary dark:bg-accent;
+  }
+
+  .clip-path-divider {
+    @apply bg-white dark:bg-secondary;
+  }
+} 
+
+.container {
+  @apply max-w-4xl mx-auto px-4;
+}
+
+html {
+  overflow-x: hidden;
+}
+
+body {
+  @apply overflow-x-hidden;
+}
+
+/* * {
+  outline: 1px solid red !important;
+} */
