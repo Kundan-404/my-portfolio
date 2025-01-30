@@ -52,7 +52,7 @@ export default function Footer() {
                 </svg>
               </a>
               <a 
-                href="https://github.com/yourusername" 
+                href="https://github.com/nateshkumar485" 
                 target="_blank" 
                 rel="noopener noreferrer"
                 className="p-2 rounded-full border border-white hover:border-neutral transition-colors"
