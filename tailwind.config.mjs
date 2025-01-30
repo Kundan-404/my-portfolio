@@ -8,8 +8,8 @@ export default {
   theme: {
     extend: {
       colors: {
-        background: "var(--background)",
-        foreground: "var(--foreground)",
+        primary: "#2A2A2A", // Dark gray from your template
+        secondary: "#4F46E5", // Blue accent
       },
     },
   },
