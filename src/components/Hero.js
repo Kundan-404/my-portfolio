@@ -7,8 +7,8 @@ export default function Hero() {
 
       <div className="max-w-4xl mx-auto px-4">
         <p className="text-lg text-neutral dark:text-accent/80 mb-4">Hi, my name is</p>
-        <h1 className="text-5xl font-bold mb-6 dark:text-accent">Natesh Kumar</h1>
-        <h2 className="text-3xl text-neutral dark:text-accent/80 mb-8">
+        <h1 className="text-4xl md:text-5xl font-bold mb-6 dark:text-accent">Natesh Kumar</h1>
+        <h2 className="text-2xl md:text-3xl text-neutral dark:text-accent/80 mb-8">
           Computer Science Student & Web Developer
         </h2>
         <p className="text-lg text-neutral dark:text-accent/80 max-w-2xl mb-12">

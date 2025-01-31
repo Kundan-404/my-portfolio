@@ -1,6 +1,7 @@
 export default function About() {
   return (
     <section id="about" className="py-20">
+      
       <div className="max-w-4xl mx-auto px-4">
         <h2 className="text-3xl font-bold mb-12 dark:text-accent">About Me</h2>
         
@@ -17,7 +18,7 @@ export default function About() {
             <p className="text-lg text-neutral dark:text-accent/80">
               Here are a few technologies I've been working with recently:
             </p>
-            <ul className="grid grid-cols-2 gap-2 mt-4">
+            <ul className="grid grid-cols-1 sm:grid-cols-2 gap-2 mt-4">
               {['Java', 'JavaScript', 'MERN Stack', 'WordPress', 'MySQL', 'Cyber Security'].map((skill, index) => (
                 <li key={index} className="flex items-center">
                   <span className="w-2 h-2 bg-primary dark:bg-accent rounded-full mr-2"></span>
@@ -30,7 +31,7 @@ export default function About() {
             <img 
               src="/assets/profile.png" 
               alt="Natesh Kumar"
-              className="rounded-full shadow-lg w-64 h-64 object-cover border-4 border-primary dark:border-accent"
+              className="rounded-full shadow-lg w-64 h-64 md:w-64 md:h-64 object-cover border-4 border-primary dark:border-accent"
             />
           </div>
         </div>
