@@ -10,7 +10,7 @@ export const experiences = [
       ]
     },
     {
-      company: "AdjcnX (Remote)",
+      company: "AdjenX (Remote)",
       role: "Web Developer Intern", 
       duration: "June 2023 – July 2023",
       points: [
