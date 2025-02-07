@@ -17,7 +17,7 @@ export default function Projects() {
                   <h3 className="text-xl font-semibold text-textPrimary dark:text-darkTextPrimary">
                     {project.name}
                   </h3>
-                  <p className="text-textSecondary dark:text-darkTextSecondary mt-2">
+                  <p className="text-textSecondary text-justify dark:text-darkTextSecondary mt-2">
                     {project.description}
                   </p>
                 </div>
