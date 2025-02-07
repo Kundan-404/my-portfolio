@@ -3,8 +3,8 @@ export const projects = [
       name: "Bone Bank Module",
       description: "A cloud-based MERN stack platform for managing bone grafts, reducing administrative tasks by 30%.",
       stack: ["MongoDB", "Express", "React", "Node.js", "Encryption"],
-      sourceCode: "https://github.com/yourusername/bone-bank",
-      livePreview: "https://bone-bank-demo.com",
+      sourceCode: "https://github.com/NATESHKUMAR485/BoneBank",
+      livePreview: "https://bone-bank.vercel.app/",
     },
     {
       name: "Quiz Management System",

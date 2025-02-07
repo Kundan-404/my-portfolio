@@ -1,59 +1,42 @@
 export default function Footer() {
   return (
-    <footer className="border-t border-primary/20 bg-primary text-white">
-      
-      <div className="max-w-4xl mx-auto px-4 py-6">
-        <div className="grid grid-cols-1 md:grid-cols-3 gap-8 mb-8">
+    <footer className="bg-primary dark:bg-darkPrimary text-white dark:text-darkTextPrimary">
+      <div className="container py-12">
+        <div className="grid grid-cols-1 md:grid-cols-4 gap-8 mb-8">
           <div>
-            <h3 className="text-lg font-semibold mb-4">Natesh Kumar</h3>
-            <p className="text-sm">
-              Computer Science student specializing in Cyber Security and Web Development.
+            <h3 className="text-xl font-semibold mb-4">Natesh Kumar</h3>
+            <p className="text-sm opacity-90">
+              Creating digital solutions with security and precision
             </p>
           </div>
           <div>
-            <h3 className="text-lg font-semibold mb-4">Get in Touch</h3>
+            <h4 className="text-lg font-medium mb-4">Navigation</h4>
             <ul className="space-y-2">
-              <li className="flex items-center">
-                <span className="mr-2">📧</span>
-                <a href="mailto:nateshkumar485@gmail.com" className="hover:text-neutral transition-colors">
-                  nateshkumar485@gmail.com
-                </a>
-              </li>
-              <li className="flex items-center">
-                <span className="mr-2">📞</span>
-                <span>+92 301 3226188</span>
-              </li>
-              <li className="flex items-center">
-                <span className="mr-2">🌍</span>
-                <span>Karachi, Pakistan</span>
-              </li>
+              <li><a href="#about" className="hover:opacity-80 transition-opacity">About</a></li>
+              <li><a href="#experience" className="hover:opacity-80 transition-opacity">Experience</a></li>
+              <li><a href="#projects" className="hover:opacity-80 transition-opacity">Projects</a></li>
+              <li><a href="#contact" className="hover:opacity-80 transition-opacity">Contact</a></li>
             </ul>
           </div>
           <div>
-            <h3 className="text-lg font-semibold mb-4">Connect</h3>
-            <div className="flex space-x-4">
-              <a 
-                href="https://linkedin.com/in/nateshkumar485" 
-                target="_blank" 
-                rel="noopener noreferrer"
-                className="p-2 rounded-full border border-white hover:border-neutral transition-colors"
-              >
-                <span>LinkedIn</span>
-              </a>
-              <a 
-                href="https://github.com/nateshkumar485" 
-                target="_blank" 
-                rel="noopener noreferrer"
-                className="p-2 rounded-full border border-white hover:border-neutral transition-colors"
-              >
-                <span>GitHub</span>
-              </a>
-            </div>
+            <h4 className="text-lg font-medium mb-4">Connect</h4>
+            <ul className="space-y-2">
+              <li><a href="https://linkedin.com/in/nateshkumar485" className="hover:opacity-80 transition-opacity">LinkedIn</a></li>
+              <li><a href="https://github.com/nateshkumar485" className="hover:opacity-80 transition-opacity">GitHub</a></li>
+              <li><a href="mailto:nateshkumar485@gmail.com" className="hover:opacity-80 transition-opacity">Email</a></li>
+            </ul>
+          </div>
+          <div>
+            <h4 className="text-lg font-medium mb-4">Legal</h4>
+            <ul className="space-y-2">
+              <li><a href="/privacy" className="hover:opacity-80 transition-opacity">Privacy Policy</a></li>
+              <li><a href="/terms" className="hover:opacity-80 transition-opacity">Terms of Service</a></li>
+            </ul>
           </div>
         </div>
-
-        <div className="border-t border-white/10 pt-4 text-center text-sm">
-          <p>
+        
+        <div className="border-t border-white/20 pt-8 text-center">
+          <p className="text-sm">
             © {new Date().getFullYear()} Natesh Kumar. All rights reserved.
           </p>
         </div>

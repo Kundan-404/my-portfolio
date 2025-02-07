@@ -24,11 +24,10 @@ export default function Navbar() {
 
   return (
     <nav className={`fixed w-full backdrop-blur-sm z-50 transition-transform duration-300 ${visible ? 'translate-y-0' : '-translate-y-full'}`}>
-      
-      <div className="max-w-4xl mx-auto px-4 py-4">
+      <div className="container py-4">
         <div className="flex justify-between items-center">
-          <h1 className="text-2xl font-bold dark:text-primary">
-            <a href="">Natesh Kumar</a>
+          <h1 className="text-2xl font-bold text-primary dark:text-darkPrimary">
+            <a href="#">Natesh Kumar</a>
           </h1>
           <div className="hidden md:flex space-x-6 text-lg font-semibold">
             <a href="#about" className="nav-link">About</a>
@@ -43,9 +42,9 @@ export default function Navbar() {
             aria-label="Toggle Menu"
           >
             {isMenuOpen ? (
-              <XMarkIcon className="w-6 h-6 dark:text-accent" />
+              <XMarkIcon className="w-6 h-6 text-primary dark:text-darkPrimary" />
             ) : (
-              <Bars3Icon className="w-6 h-6 dark:text-accent" />
+              <Bars3Icon className="w-6 h-6 text-primary dark:text-darkPrimary" />
             )}
           </button>
         </div>
@@ -56,9 +55,7 @@ export default function Navbar() {
             <a href="#experience" className="block nav-link">Experience</a>
             <a href="#projects" className="block nav-link">Projects</a>
             <a href="#contact" className="block nav-link">Contact</a>
-            <div className="flex justify-center">
-              {/* <ThemeToggle /> */}
-            </div>
+            
           </div>
         )}
       </div>
