@@ -91,3 +91,32 @@ export default function ThemeToggle() {
     </button>
   );
 }
+
+
+// import { useEffect, useState } from 'react';
+
+// export default function ThemeToggle() {
+//   const [darkMode, setDarkMode] = useState(false);
+
+//   const toggleDarkMode = () => {
+//     setDarkMode(!darkMode);
+//     localStorage.setItem('darkMode', !darkMode);
+//     document.documentElement.setAttribute('data-theme', !darkMode ? 'dark' : 'light');
+//   };
+
+//   useEffect(() => {
+//     const savedDarkMode = localStorage.getItem('darkMode') === 'true';
+//     setDarkMode(savedDarkMode);
+//     document.documentElement.setAttribute('data-theme', savedDarkMode ? 'dark' : 'light');
+//   }, []);
+
+//   return (
+//     <button
+//       onClick={toggleDarkMode}
+//       className="p-2 rounded-full hover:bg-surface dark:hover:bg-darkSurface transition-colors"
+//       aria-label="Toggle Dark Mode"
+//     >
+//       {darkMode ? '🌙' : '☀️'}
+//     </button>
+//   );
+// }

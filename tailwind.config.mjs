@@ -9,14 +9,24 @@ export default {
   theme: {
     extend: {
       colors: {
-        // primary: "#2A2A2A", // Dark gray from your template
-        // secondary: "#4F46E5", // Blue accent
-        primary: "#121324", // Vibrant orange-red
-        secondary: "#545748", // Muted olive green
-        secondary1: "#474e2b", // Muted olive green
-        accent: "#DB9F75",   // Warm beige
-        neutral: "#804012",  // Deep brown
-        tertiary: "#BE4B1B", // Burnt orange
+        // Light Mode
+        primary: '#722F37',
+        secondary: '#8A3E46',
+        background: '#F5F5F5',
+        surface: '#FFFFFF',
+        textPrimary: '#2D2D2D',
+        textSecondary: '#555555',
+        accent: '#A0525D',
+
+        // Dark Mode
+        // darkPrimary: '#B87D87',
+        darkPrimary: '#722F37',
+        darkSecondary: '#8A3E46',
+        darkBackground: '#121212',
+        darkSurface: '#2D2D2D',
+        darkTextPrimary: '#F5F5F5',
+        darkTextSecondary: '#CCCCCC',
+        darkAccent: '#722F37',
       },
       animation: {
         'float': 'float 6s ease-in-out infinite',

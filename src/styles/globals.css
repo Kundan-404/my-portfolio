@@ -4,8 +4,34 @@
 @tailwind components;
 @tailwind utilities;
 
+:root {
+  /* Light Mode */
+  --primary: #722F37;
+  --secondary: #8A3E46;
+  --background: #F5F5F5;
+  --surface: #FFFFFF;
+  --text-primary: #2D2D2D;
+  --text-secondary: #555555;
+  --accent: #A0525D;
+}
+
+[data-theme="dark"] {
+  /* Dark Mode */
+  --primary: #B87D87;
+  --secondary: #8A3E46;
+  --background: #121212;
+  --surface: #2D2D2D;
+  --text-primary: #F5F5F5;
+  --text-secondary: #CCCCCC;
+  --accent: #722F37;
+}
+
 body {
-  @apply bg-white dark:bg-secondary text-neutral dark:text-primary/80;
+  @apply bg-background dark:bg-darkBackground text-textPrimary dark:text-darkTextPrimary;
+}
+
+.container {
+  @apply max-w-4xl mx-auto px-4;
 }
 
 .nav-link {
@@ -13,23 +39,11 @@ body {
 }
 
 .nav-link::after {
-  @apply content-[''] absolute bottom-0 left-0 w-0 h-0.5 bg-primary dark:bg-accent transition-all duration-300;
+  @apply content-[''] absolute bottom-0 left-0 w-0 h-0.5 bg-accent dark:bg-darkAccent transition-all duration-300;
 }
 
 .nav-link:hover::after {
   @apply w-full;
-}
-
-.container {
-  @apply max-w-4xl mx-auto px-4;
-}
-
-html {
-  overflow-x: hidden;
-}
-
-body {
-  @apply overflow-x-hidden;
 }
 
 /* Custom scrollbar */
@@ -38,44 +52,14 @@ body {
 }
 
 ::-webkit-scrollbar-track {
-  background: #f1f1f1;
+  background: var(--background);
 }
 
 ::-webkit-scrollbar-thumb {
-  background: #122324;
+  background: var(--primary);
   border-radius: 4px;
 }
 
-/* Dark mode scrollbar */
-.dark ::-webkit-scrollbar-track {
-  background: #545748;
-}
-
 .dark ::-webkit-scrollbar-thumb {
-  background: #DB9F75;
-}
-
-@keyframes blink {
-  0%, 100% { opacity: 1; }
-  50% { opacity: 0; }
-}
-
-.animate-blink {
-  animation: blink 1s infinite;
-}
-
-@keyframes sparkle {
-  0% { opacity: 0; transform: scale(0); }
-  50% { opacity: 1; transform: scale(1); }
-  100% { opacity: 0; transform: scale(0); }
-}
-
-.sparkle {
-  animation: sparkle 1.5s infinite;
-}
-.bg-grid-pattern {
-  background-image: 
-    linear-gradient(to right, rgba(255,255,255,0.1) 1px, transparent 1px),
-    linear-gradient(to bottom, rgba(255,255,255,0.1) 1px, transparent 1px);
-  background-size: 40px 40px;
+  background: var(--darkPrimary);
 }
