@@ -306,7 +306,7 @@ export default function Contact() {
           </div>
 
           <form 
-            action="https://formspree.io/f/xdovrwrg" 
+            action="https://formspree.io/f/xovjwqdq" 
             method="POST"
             className="space-y-6"
           >
