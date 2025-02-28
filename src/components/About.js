@@ -7,12 +7,10 @@ export default function About() {
         <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
           <div>
             <p className="text-lg text-textPrimary dark:text-darkTextPrimary text-justify mb-6">
-              Hello! I'm Natesh Kumar, a Computer Science student at the Institute of Business Administration, Karachi. 
-              I specialize in Cyber Security and Web Development, with a passion for building secure and scalable web solutions.
+              Hello! I'm Kundan Kumar, a Software Engineer at 1LINK (Pvt) Limited and a Computing Science student at IBA Karachi. I specialize in full-stack development, leveraging technologies like Java, ASP.NET Core, AngularJS, and the MERN stack to create robust and scalable applications.
             </p>
             <p className="text-lg text-textSecondary dark:text-darkTextSecondary text-justify mb-6">
-              I enjoy working on projects that solve real-world problems, whether it's developing responsive websites or 
-              creating secure systems. My goal is to deliver high-quality, user-friendly applications that make an impact.
+                I am passionate about solving real-world problems, whether it's developing secure web applications or crafting dynamic, user-friendly interfaces. My goal is to deliver high-quality, innovative solutions that make a lasting impact.
             </p>
             {/* <div className="mt-8">
               <h3 className="text-xl font-semibold text-primary dark:text-darkPrimary mb-4">
